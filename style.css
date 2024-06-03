@@ -1,0 +1,476 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    box-sizing: border-box;
+}
+.container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #fff;
+    width: 340px;
+    height: 115px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 2px rgba(191, 188, 188, 0.1);
+    margin-bottom: 20px;
+    padding: 18px; 
+    box-sizing: border-box;
+    padding-top: 0.5px;
+    padding-bottom: 7px;
+}
+
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+h6{
+    padding-bottom: 8px;
+}
+
+.card-content {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span.change {
+    font-size: 14px;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+/*country sales*/
+.card2{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    
+}
+
+.country-sales {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 95%;
+   
+}
+.country-details span{
+    color: black;
+}
+.country-logo {
+    width: 40px;
+    height: auto;
+    margin-left: 10px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    padding: 0px;
+    line-height: 200px;
+}
+
+
+.country-details {
+    display: flex;
+    flex-direction: column;
+    
+}
+.country{
+    padding-top: 10px;
+    font-size: 14px;
+    display: flex;
+    display: inline-flex;
+}
+.countryname{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(110, 107, 107);
+    padding-top: 12px;
+    
+   
+   
+}
+ span{
+    margin-left: 17px;
+}
+.ratio {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.positive {
+    color: green;
+}
+.negative {
+    color: red;
+}
+h5{
+    margin-left: 25px;
+    font-size: 15px;
+    color: rgb(84, 82, 82);
+    margin-bottom: px;
+}
+
+.country-logo {
+    width: 50px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.main-container {
+    width: 50%;
+    margin: 10px;
+    padding: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    box-sizing: border-box;
+
+}
+.sales-entry {
+   align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 24px;
+    border-radius: 5px;
+   
+    
+}
+
+.country-flag {
+    width: 50px;
+    height: auto;
+    margin-right: 0px;
+    border-radius: 50%;
+}
+
+.country-name {
+    width: 100px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.progress-container {
+    flex-grow: 1;
+    height: 20px;
+    position: relative;
+    background-color: #d2cfcf;
+    border-radius: 13px;
+   
+    margin-right: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #af3e1f;
+    border-radius: 13px;
+}
+
+.progress-percentage {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    color: #fff;
+}
+.sales-entry span{
+    color: black;
+}
+.table-container {
+    width: 95%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders-table th, .orders-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.orders-table thead {
+    background-color: #edf0ee;
+    color: #1d1c1c;
+}
+
+.orders-table tbody tr:nth-child(even) {
+    background-color: white;
+}
+
+
+
+.product-logo {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.action-button {
+    padding: 5px;
+    margin-right: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.action-button.edit {
+    color: #4CAF50;
+}
+
+.action-button.delete {
+    color: #f44336;
+}
+
+.action-button:hover {
+    opacity: 0.7;
+}
+
+.action-button i {
+    font-size: 16px;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+    width: 100px;
+}
+td.status.delivered{
+    color: rgb(7, 129, 33);
+}
+td.status.pending{
+    color: rgb(133, 7, 7);
+}
+h4{
+    margin-top: 0;
+}
+
+/*total rating card*/
+.card-wrapper {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 50%;
+    margin: 12px;
+}
+
+.earnings-wrapper {
+    
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.earnings-wrapper h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.earnings-wrapper p {
+    font-size: 20px;
+    color: #333;
+}
+
+.earnings-wrapper .percentage {
+    color: green;
+    font-size: 16px;
+}
+
+.ratings-wrapper {
+    text-align: center;
+    border-bottom: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-top: none;
+}
+
+.ratings-wrapper h3 {
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.ratings-wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sales-wrapper .sales-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sales-wrapper .sales-item:last-child {
+    margin-bottom: 0;
+}
+
+.logo-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.sales-details {
+    flex-grow: 1;
+}
+
+.sales-details h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.sales-details p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.profit-details {
+    text-align: right;
+}
+
+.profit-details p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.profit-details .up {
+    color: green;
+}
+
+.profit-details .down {
+    color: red;
+}
+/*traffic card*/
+.traffic-card {
+    background: #fff;
+    border-radius: px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 14px;
+    width: 50%;
+}
+.traffic-header {
+    display: flex;
+    align-items: center;
+}
+.traffic-logo {
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 50%;
+}
+.traffic-header-text {
+    margin-left: 10px;
+    font-size: 24px;
+}
+.traffic-total {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.traffic-graph {
+    margin-top: 20px;
+    position: relative;
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.bottom-number-line {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+}
+.bottom-number-line span {
+    font-size: 12px;
+}
+.left-number-line {
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.left-number-line span {
+    font-size: 12px;
+}
+.graph-content {
+    
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+.traffic-bar {
+    position: absolute;
+    bottom: 0;
+    width: 6px;
+    cursor: pointer;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+.traffic-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 50%;
+    width: 100%;
+    background: blue;
+    
+    
+}
+.traffic-bar::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+    background: green;
+}
+.views{
+    padding: 14px;
+    
+}
+.views button{
+    background-color: rgb(20, 74, 20);
+    color: white;
+}
+
+
