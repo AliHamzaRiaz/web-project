@@ -10,7 +10,7 @@ body {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -94,23 +94,49 @@ body {
     cursor: pointer;
     color: white;
 }
-
-/* Hidden checkbox */
 .menu-toggle {
     display: none;
 }
-
-/* Sidebar open state */
 .menu-toggle:checked ~ .sidebar {
     width: 250px;
 }
-
-/* Rotate menu icon when sidebar is open */
 .menu-toggle:checked ~ .navbar .menu-icon .fas.fa-bars {
     transform: rotate(90deg);
 }
+.menu-toggle:checked ~ body {
+    margin-left: 250px;
+}
+.submenu-toggle {
+    display: none;
+}
 
-/* Adjust main content when sidebar is open */
+.submenu {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.submenu a {
+    font-size: 20px;
+}
+
+.submenu-toggle:checked + .submenu-label + .submenu {
+    display: block;
+}
+
+.submenu-label {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.submenu-label:hover {
+    color: #f1f1f1;
+}
 .menu-toggle:checked ~ body {
     margin-left: 250px;
 }
